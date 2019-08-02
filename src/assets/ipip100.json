@@ -1,0 +1,602 @@
+[
+  {
+    "factor": 1,
+    "label": "Eu sou a alma da festa.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu sou grosseiro(a) com as pessoas",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu estou sempre pronto(a).",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me estresso facilmente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu tenho um vocabulário rico.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu frequentemente me sinto desconfortável perto de outras pessoas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu desejo saber mais sobre as pessoas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu largo minhas coisas em qualquer lugar.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me sinto descontraído(a), leve, solto(a) a maior parte do tempo.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu tenho dificuldade para entender idéias abstratas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu me sinto confortável quando junto das pessoas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu nao tenho interesse pelo problemas dos outros.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu presto atenção aos detalhes.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me preocupo com as coisas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu tenho uma imaginação viva.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu não costumo me expor muito.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu sou solidário(a) aos sentimentos dos outros.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu faço uma bagunça com as minhas coisas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Raramente eu me sinto triste.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu não me interesso por idéias abstratas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu inicio conversas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu sinto pouca preocupação pelos outros.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu cumpro minhas tarefas imediatamente.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me sinto facilmente incomodado(a).",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu tenho idéias excelentes.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu tenho pouco a dizer.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu tenho um coração mole.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Frequentemente eu me esqueço de devolver as coisas aos seus devidos lugares.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu nao me aborreço facilmente.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu não tenho uma boa imaginação.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu converso com várias pessoas em festas ou outras reuniões sociais.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu não estou realmente interessado(a) nos outros.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu gosto de ordem, de organização.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me aborreço facilmente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu entendo as coisas rapidamente.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu não gosto de chamar atenção para mim mesmo.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu dedico tempo aos outros.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu não cumpro com minhas obrigações.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu raramente me irrito.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu tento evitar pessoas complicadas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu não me importo de ser o centro das atenções.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu dificilmente me abro com as pessoas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu sigo uma agenda, uma rotina de tarefas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Meu humor muda frequentemente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu faço uso de palavras difíceis ou incomuns.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu fico queito(a) quando perto de estranhos.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu sou sensível as emoções das outras pessoas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu nao cumpro com minhas obrigações.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu raramente fico bravo(a).",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu tenho dificuldade em imaginar as coisas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu faço amigos facilmente.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu sou indiferente quanto ao sentimento dos outros.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu sou preciso no meu trabalho.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu tenho mudanças frequentes de humor.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu passo meu tempo refletindo sobre as coisas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu acho difícil abordar (falar com) as pessoas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu faço as outras pessoas se sentirem à vontade.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu perco meu tempo.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me irrito facilmente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu evito ler material de difícil leitura.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu tomo a liderança.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu pergunto sobre o bem-estar dos outros.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu faço as coisas de acordo com o planejado.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Frequentemente eu me sinto triste.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu sou cheio(a) de idéias.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu não falo muito.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu sei como confortar as pessoas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu faço as coisas pela metade.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu fico bravo(a) facilmente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu não me aprofundo em nenhum assunto",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu sei como cativar as pessoas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu adoro crianças.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu vou até o final, até que as coisas estarem perfeitas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu entro em pânico facilmente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu levo a conversa para um alto-nível.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu guardo minhas minhas emoções para mim.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu estou de bem com a maioria das pessoas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu acho difícil me concentrar no trabalho.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me sinto ameaçado(a) facilmente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu entendo as coisas facilmente.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu me sinto bem com as pessoas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu tenho boas palavras para todo mundo.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu faço plano e os sigo.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu fico sufocado pelas emoções.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu consigo lidar com  muitas informações.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu sou uma pessoa muito reservada.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu demonstro minha gratidão.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu faço uma bagunça no meu quarto.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me ofendo facilmente.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu sou bom(boa) em muitas coisas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu espero para que outras pessoas liderem.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu coloco os outros em primeiro lugar.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu gosto de ordem e rotinas.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu me prendo aos meus problemas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu adoro ler materiais desafiadores, difíceis.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 1,
+    "label": "Eu tenho habilidade para lidar com situações sociais.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 2,
+    "label": "Eu adoro ajudar aos outros.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 3,
+    "label": "Eu gosto de limpeza e ordem.",
+    "reversed": true,
+    "value": 0
+  },
+  {
+    "factor": 4,
+    "label": "Eu reclamo das coisas.",
+    "reversed": false,
+    "value": 0
+  },
+  {
+    "factor": 5,
+    "label": "Eu adoro pensar em novas formas de fazer as coisas.",
+    "reversed": true,
+    "value": 0
+  }
+]
