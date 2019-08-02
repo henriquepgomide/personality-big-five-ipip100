@@ -17,7 +17,7 @@
 
 				<b-tab-item label="Resultados" icon="library-music">
 
-					<div v-if="countItems > 0">
+					<div v-if="countItems > 100">
 						<br>
 						<div class="chart-container is-flex is-horizontal-center ">
 							<bar-chart :chart-data="datacollection" :options="options"></bar-chart>
