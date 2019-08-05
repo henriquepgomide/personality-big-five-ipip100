@@ -55,7 +55,7 @@
   },
   {
     "factor": 5,
-    "label": "Eu tenho dificuldade para entender idéias abstratas.",
+    "label": "Eu tenho dificuldade para entender ideias abstratas.",
     "reversed": false,
     "value": 0
   },
@@ -67,7 +67,7 @@
   },
   {
     "factor": 2,
-    "label": "Eu nao tenho interesse pelo problemas dos outros.",
+    "label": "Eu não tenho interesse pelo problemas dos outros.",
     "reversed": false,
     "value": 0
   },
@@ -169,7 +169,7 @@
   },
   {
     "factor": 4,
-    "label": "Eu nao me aborreço facilmente.",
+    "label": "Eu não me aborreço facilmente.",
     "reversed": true,
     "value": 0
   },
@@ -283,7 +283,7 @@
   },
   {
     "factor": 3,
-    "label": "Eu nao cumpro com minhas obrigações.",
+    "label": "Eu não cumpro com minhas obrigações.",
     "reversed": false,
     "value": 0
   },
