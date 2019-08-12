@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<div class="container">
+
 			<div class="main-title"></div>
 			<h1 class="title has-text-centered">Teste de Personalidade</h1>
 			<h2 class="subtitle has-text-centered">
@@ -10,24 +11,17 @@
 		</div>
 
 		<div class="main-application">
-			<b-tabs type="is-toggle" expanded>
+			<b-tabs type="is-toggle"  v-model="activeTab" expanded>
 				<b-tab-item label="Teste" icon="google-photos">
-					<Test :ipip100="ipip100" :countItems="countItems"/>
+					<Test :ipip100="ipip100"
+								:countItems="countItems"
+								v-on:sendId="fillFormId"/>
 				</b-tab-item>
 
 				<b-tab-item label="Resultados" icon="library-music">
 
-					<div v-if="countItems > 100">
-						<br>
-						<div class="chart-container is-flex is-horizontal-center ">
-							<bar-chart :chart-data="datacollection" :options="options"></bar-chart>
-						</div>
-
-						<div class="is-flex is-horizontal-center">
-							<b-button type="is-primary" @click="fillData" outlined>Avaliar Personalidade</b-button>
-						</div>
-
-						<Results :ipip100="ipip100" :SumFacOne="SumFacOne" :SumFacTwo="SumFacTwo" :SumFacThree="SumFacThree" :SumFacFour="SumFacFour" :SumFacFive="SumFacFive"/>
+					<div v-if="!!formName && countItems == 100">
+						<Results :formName="formName"/>
 					</div>
 
 					<div v-else >
@@ -38,7 +32,8 @@
 						</div>
 						<br>
 						<h1 class="title has-text-centered">Não está se esquecendo de nada?</h1>
-						<h2 class="subtitle has-text-centered">Você ainda não respondeu todas questões. Faltam {{ 100 - countItems }}.</h2>
+						<h2 class="is-size-3 has-text-weight-medium has-text-centered">Faltam {{ 100 - countItems }} questões.</h2>
+						<h2 class="subtitle has-text-centered">Você ainda não respondeu todas questões. </h2>
 					</div>
 
 				</b-tab-item>
@@ -52,7 +47,6 @@
 import Test from './IpipFormRadio.vue'
 import Instructions from './IpipInstructions.vue'
 import Results from './IpipResults.vue'
-import IpipChart from './IpipChart.vue'
 
 import ipip100 from '../../assets/ipip100.json'
 
@@ -65,85 +59,26 @@ export default {
 		Test,
 		Instructions,
 		Results,
-		'bar-chart': IpipChart,
 	},
 	data() {
 		return {
 			ipip100,
-			datacollection: null,
-			options:
-			{
-				scales: {
-					yAxes: [
-						{
-							ticks: {
-								suggestedMin:20,
-								suggestedMax:100,
-								stepSize: 20
-							}
-						}
-					]
-				},
-				responsive: false,
-				maintainAspectRatio: false
-			},
+			formName: null,
+			activeTab: 0,
 			filledForm: this.countItems,
 		}
 	},
-	mounted () {
-		this.fillData()
-	},
 	methods: {
-		fillData() {
-			this.datacollection = {
-				labels: ['Extroversão', 'Amabilidade', 'Conscienciosidade',
-					'Estabilidade Emocional', 'Intelecto/Imaginação'],
-				datasets: [
-					{
-						label: 'Sua soma',
-						backgroundColor: '#7957d5',
-						data: [this.SumFacOne, this.SumFacTwo, this.SumFacThree,
-							this.SumFacFour, this.SumFacFive],
-					},
-					{
-						label: 'Ponto Médio',
-						backgroundColor: 'hsl(48, 100%, 67%)',
-						data: [60, 60, 60, 60, 60]
-					}
-				]
-			}
-		}
+		fillFormId(formId) {
+			this.formName = formId;
+			this.activeTab = 1;
+		},
 	},
 	computed: {
 		countItems() {
 			return this.ipip100
 				.map(item => convertToAnswered(item.value))
 				.reduce( (Sum, item) => item + Sum, 0)
-		},
-		SumFacOne() {
-			return this.ipip100
-				.filter(item => item.factor == 1)
-				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0);
-		},
-		SumFacTwo() {
-			return this.ipip100
-				.filter(item => item.factor == 2)
-				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
-		},
-		SumFacThree() {
-			return this.ipip100
-				.filter(item => item.factor == 3)
-				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
-		},
-		SumFacFour() {
-			return this.ipip100
-				.filter(item => item.factor == 4)
-				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
-		},
-		SumFacFive() {
-			return this.ipip100
-				.filter(item => item.factor == 5)
-				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
 		},
 	},
 }

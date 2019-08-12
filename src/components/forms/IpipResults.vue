@@ -1,5 +1,13 @@
 <template>
 	<div class="main">
+		<div class="chart-container is-flex is-horizontal-center ">
+			<bar-chart 
+				 v-if="loaded"
+				:chart-data="datacollection" 
+				:options="options"></bar-chart>
+		</div>
+
+
 		<section>
 			<!-- Factor Extraversion -->
 			<div class="container">
@@ -108,7 +116,7 @@
 					<h2 class="is-size-4 has-text-centered has-text-weight-bold">Nível médio de conscienciosidade</h2>
 					<h2 class="is-size-6 has-text-centered has-text-weight-bold">Sua Pontuação: {{ SumFacThree }} / 100</h2>
 					<br>
-					<p>você tem características de pessoas agradáveis e desagráveis. você valoriza os interesses de outras pessoas, mas sem se esquecer dos seus interesses. em alguns momentos você prefere tomar ações levando em consideração os sentimentos de outras pessoas, mas também consegue tomar decisões puramente racionais. </p><br>
+					<p>Você tem níveis de conscienciosidade da maioria das pessoas. Você consegue planejar diversos aspectos de sua vida, no entanto consegue também tomar decisões impulsivas e aproveitar pequenos prazeres.</p><br>
 				</div>
 
 				<div v-else>
@@ -205,7 +213,7 @@
 		</section>
 
 		<section>
-			Fonte: Conteúdo adaptado de: <a href="https://psychology.wikia.org/wiki/Five_factor_personality_model">Wiki Psychology </a>
+			Fonte: Conteúdo adaptado de <a href="https://psychology.wikia.org/wiki/Five_factor_personality_model">Wiki Psychology </a>
 		</section>
 
 	</div>
@@ -213,9 +221,103 @@
 
 <script>
 
+import IpipChart from './IpipChart.vue'
+
 export default {
-	props: ['ipip100', 'SumFacOne', 'SumFacTwo',
-		'SumFacThree', 'SumFacFour', 'SumFacFive'],
+	components: {
+		'bar-chart': IpipChart
+	},
+	props: ['formName'],
+	data() {
+		return {
+			formData: [],
+			datacollection : null, 
+			loaded: false,
+			options:
+			{
+				scales: {
+					yAxes: [
+						{
+							ticks: {
+								suggestedMin:20,
+								suggestedMax:100,
+								stepSize: 20
+							}
+						}
+					]
+				},
+				responsive: true,
+				maintainAspectRatio: false
+			},
+		
+		}
+	},
+	async mounted () {
+		this.fetchData()
+	},
+	methods: {
+		fetchData() {
+			const database = 'https://open-bigfive-ipip100.firebaseio.com/ipip100/';
+			const id = this.formName;
+			const query = database + id + '.json';
+			this.$http.get(query)
+				.then(response => {
+					return response.json()
+				})
+				.then(data => {
+					this.formData = data;
+					this.fillData();
+					this.loaded = true;
+				})
+		},
+		fillData() {
+			this.datacollection = {
+				labels: ['Extroversão', 'Amabilidade', 'Conscienciosidade',
+					'Estabilidade Emocional', 'Intelecto/Imaginação'],
+				datasets: [
+					{
+						label: 'Sua soma',
+						backgroundColor: '#7957d5',
+						data: [this.SumFacOne, this.SumFacTwo, this.SumFacThree,
+									this.SumFacFour, this.SumFacFive]
+					},
+					{
+						label: 'Ponto Médio',
+						backgroundColor: 'hsl(48, 100%, 67%)',
+						data: [60, 60, 60, 60, 60]
+					}
+				]
+			}
+		},
+
+	},
+	computed: {
+		SumFacOne() {
+			return this.formData
+				.filter(item => item.factor == 1)
+				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0);
+		},
+		SumFacTwo() {
+			return this.formData
+				.filter(item => item.factor == 2)
+				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
+		},
+		SumFacThree() {
+			return this.formData
+				.filter(item => item.factor == 3)
+				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
+		},
+		SumFacFour() {
+			return this.formData
+				.filter(item => item.factor == 4)
+				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
+		},
+		SumFacFive() {
+			return this.formData
+				.filter(item => item.factor == 5)
+				.reduce( (Sum, item) => parseInt(item.value,10) + Sum, 0)
+		},
+	}
 }
 
 </script>
