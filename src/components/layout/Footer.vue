@@ -3,15 +3,10 @@
     <footer>
       <div class="content has-text-centered">
         <p>
-          <strong>Personalidade</strong> por
-          <a href="https://jgthms.com">Prof. Dr. Henrique Gomide</a>. O código foi construído com dinheiro público. Então é de acesso aberto.
-          <a
-            href="http://opensource.org/licenses/mit-license.php"
-          >MIT</a>.
-          <br />O conteúdo do site está licenciado com
-          <a
-            href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-          >CC BY NC SA 4.0</a>.
+          <strong>Teste de Personalidade</strong> por
+          <a href="https://www.linkedin.com/in/hpgomide/">Henrique Gomide</a> - Universidade Federal de Viçosa. 
+					<br>Uma pequena parte do código foi escrito durante o horário de trabalho; a outra durante as madrugadas e férias. Mesmo assim, o código segue a licença <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
+					<br>Disponível no meu <a href="https://github.com/henriquepgomide/personality-big-five-ipip100">Github</a>.
         </p>
       </div>
     </footer>
