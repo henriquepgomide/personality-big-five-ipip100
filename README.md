@@ -1,6 +1,6 @@
 # Personality Big Five IPIP100
 
-This project is a single page application written in Vue that assess personality according to the traits theory. Tests items were adopted from the International Personality Item Pool 100-Item. 
+This project is a single page application written in Vue that assesses personality under a trait theory. Tests items were adopted from the International Personality Item Pool 100-Item. 
 
 At the moment, all items are available in Brazilian Portuguese. If you're interested in translating into your language, drop me a message.
 
