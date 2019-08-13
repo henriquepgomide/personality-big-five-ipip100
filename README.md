@@ -14,7 +14,7 @@ At the moment, all items are available in Brazilian Portuguese. If you're intere
 You can use this page to show how personality under the trait theory. Subjects will receive a feedback after completion, which might increase students' satisfaction. You also can use the subjects anonymazed data to teach psychometrics and statistics.
 
 ## Research
-You can drop me a message and we can collaborate on data collection and preparation. Depending on your goals, we may go <i>pro bono</i> or under a consulting fees. 
+You can drop me a message and we can collaborate on data collection and preparation. Depending on your goals, we may go <i>pro bono</i> or under a consulting fee. 
 
 ## Coding 
 Feel free to extend the code to your project. Don't forget to cite me though.
