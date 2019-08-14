@@ -246,7 +246,7 @@ export default {
 						}
 					]
 				},
-				responsive: true,
+				responsive: false,
 				maintainAspectRatio: false
 			},
 		
