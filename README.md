@@ -4,6 +4,7 @@ This project is a single page application written in Vue that assesses personali
 
 At the moment, all items are only available in Brazilian Portuguese. If you're interested in translating into your language, drop me a message.
 
+[Link to live Version](https://henriquepgomide.github.io/personality-big-five-ipip100/)
 
 ![Personality](https://github.com/henriquepgomide/personality-big-five-ipip100/raw/master/src/assets/app-screenshot.png)
 
