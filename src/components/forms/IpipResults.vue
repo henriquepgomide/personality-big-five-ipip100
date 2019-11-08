@@ -53,7 +53,7 @@
 			<!-- factor Agreebleness -->
 			<div class="container">
 				<h1 class="title">Agradabilidade</h1>
-				<p>Agradabilidade reflete as diferenças pessoais no que se refere a cooperação e harmonia social. É um fator para conseguir e manter a popularidade. Por outro lado, amabilidade não é útil em situações que requerem soluções duras e absolutamente objetivas.</p> <br>
+				<p>Agradabilidade reflete as diferenças pessoais no que se refere a cooperação e harmonia social. É um fator para conseguir e manter a popularidade. Por outro lado, agradabilidade não é útil em situações que requerem soluções duras e absolutamente objetivas.</p> <br>
 
 				<div v-if="SumFacTwo > ipipReference.f_two.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
@@ -274,7 +274,7 @@ export default {
 		},
 		fillData() {
 			this.datacollection = {
-				labels: ['Extroversão', 'Amabilidade', 'Conscienciosidade',
+				labels: ['Extroversão', 'Agradabilidade', 'Conscienciosidade',
 					'Estabilidade Emocional', 'Intelecto/Imaginação'],
 				datasets: [
 					{
