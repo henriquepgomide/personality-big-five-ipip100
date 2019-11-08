@@ -7,7 +7,6 @@
 				:options="options"></bar-chart>
 		</div>
 
-
 		<section>
 			<!-- Factor Extraversion -->
 			<div class="container">
@@ -94,7 +93,7 @@
 			<!-- factor Conscientiousness -->
 			<div class="container">
 				<h1 class="title">Conscienciosidade</h1>
-				<p>Consciensiosidade é a característica associada a forma que controlamos e direcionamos nossos impulsos. Impulsos não necessariamente são ruins, às vezes reagir rapidamente e melhor que não reagir de forma satisfatória. </p> <br>
+				<p>Consciensiosidade é a característica associada a forma que controlamos e direcionamos nossos impulsos. Impulsos não necessariamente são ruins, às vezes reagir rapidamente é melhor que não reagir de forma satisfatória.</p> <br>
 				<div v-if="SumFacThree > ipipReference.f_three.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
@@ -139,13 +138,13 @@
 				<div v-if="SumFacFour > ipipReference.f_four.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
-							<img src="./../../assets/1f631.svg" alt="">
+							<img src="./../../assets/1f642.svg" alt="">
 						</figure>
 					</div>
-					<h2 class="is-size-4 has-text-centered has-text-weight-bold">Instabilidade emocional</h2>
+					<h2 class="is-size-4 has-text-centered has-text-weight-bold">Estabilidade Emocional</h2>
 					<h2 class="is-size-6 has-text-centered has-text-weight-bold">Sua Pontuação: {{ SumFacFour }} / 100</h2>
 					<br>
-					<p>Pessoas com instabilidade emocional são reagem a eventos que a maioria das pessoas não reagem. A intensidade das reações costuma ser também maior. Você tende a interpretar reações normais como ameaçadoras e tem dificuldade em lidar com pequenas frustrações. Essa tendência tende a diminuir sua capacidade de pensar claramente, tomar decisões e se adaptar a reações de estresse.</p> <br>
+					<p>Estabilidade. Essa uma característica forte sua. Pessoas como você dificilmente se irritam e possuem reações emocionais intensas e a qualquer estímulo. Também tendem a ser calmas e livres de sentimentos negativos duradouros. Liberdade desses sentimentos negativos não necessarimante excluem sentimentos positivos.</p><br>
 				</div>
 
 				<div v-else-if="SumFacFour > ipipReference.f_four.lower">
@@ -163,13 +162,14 @@
 				<div v-else>
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
-							<img src="./../../assets/1f642.svg" alt="">
+							<img src="./../../assets/1f631.svg" alt="">
 						</figure>
 					</div>
-					<h2 class="is-size-4 has-text-centered has-text-weight-bold">Estabilidade Emocional</h2>
+					<h2 class="is-size-4 has-text-centered has-text-weight-bold">Instabilidade emocional</h2>
 					<h2 class="is-size-6 has-text-centered has-text-weight-bold">Sua Pontuação: {{ SumFacFour }} / 100</h2>
 					<br>
-					<p>Estabilidade. Essa uma característica forte sua. Pessoas como você dificilmente se irritam e possuem reações emocionais intensas e a qualquer estímulo. Também tendem a ser calmas e livres de sentimentos negativos duradouros. Liberdade desses sentimentos negativos não necessarimante excluem sentimentos positivos.</p><br>
+					<p>Pessoas com instabilidade emocional reagem a eventos que a maioria das pessoas não reagem. A intensidade das reações costuma ser também maior. Você tende a interpretar reações normais como ameaçadoras e tem dificuldade em lidar com pequenas frustrações. Essa tendência tende a diminuir sua capacidade de pensar claramente, tomar decisões e se adaptar a reações de estresse.</p> <br>
+
 				</div>
 			</div>
 
