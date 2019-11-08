@@ -20,7 +20,7 @@
 
 				<b-tab-item label="Resultados" icon="library-music">
 
-					<div v-if="!!formName && countItems == 100">
+          <div v-if="!!formName && countItems == 100">
 						<Results :formName="formName"/>
 					</div>
 

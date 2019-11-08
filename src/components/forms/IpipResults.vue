@@ -2,8 +2,8 @@
 	<div class="main">
 		<div class="chart-container is-flex is-horizontal-center ">
 			<bar-chart 
-				 v-if="loaded"
-				:chart-data="datacollection" 
+         v-if="loaded"
+         :chart-data="datacollection" 
 				:options="options"></bar-chart>
 		</div>
 
@@ -14,7 +14,7 @@
 				<h1 class="title">Extroversão</h1>
 				<p>Uma explicação simples é que extrovertidos ganham energia se associando com outras pessoas e perdem energia quando estão sozinhos em qualquer período de tempo. Já o introvertido ganha energia fazendo atividades individuais como vendo filmes e lendo, e perde energia, às vezes no ponto de exaustão, ao engajar em atividades sociais.</p> <br>
 
-				<div v-if="SumFacOne > 80">
+				<div v-if="SumFacOne > ipipReference.f_one.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/extrovert.svg" alt="">
@@ -25,7 +25,7 @@
 					<p>Extrovertidos se divertem com a companhia de outras pessoas, são cheios de energia e frequentemente têm experiência com emoções positivas. Você é conhecido por seu entusiasmo, é orientado para ação e tem maior probabilidade de dizer "Sim", "Bora lá" para oportunidades. Em grupos, tende a falar bastante e chamar atenção para si.</p> <br>
 				</div>
 
-				<div v-else-if="SumFacOne >= 40">
+				<div v-else-if="SumFacOne >= ipipReference.f_one.lower">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/extrovert.svg" alt="">
@@ -55,7 +55,7 @@
 				<h1 class="title">Agradabilidade</h1>
 				<p>Agradabilidade reflete as diferenças pessoais no que se refere a cooperação e harmonia social. É um fator para conseguir e manter a popularidade. Por outro lado, amabilidade não é útil em situações que requerem soluções duras e absolutamente objetivas.</p> <br>
 
-				<div v-if="SumFacTwo > 80">
+				<div v-if="SumFacTwo > ipipReference.f_two.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/aggradable.svg" alt="">
@@ -67,7 +67,7 @@
 					<p>Pessoas como você valorizam estar bem com outras pessoas e são geralmente consideradas amigáveis, generosas e estão sempre dispostas a ajudar ao próximo. Você também tende achar que as pessoas são honestas, decentes e confiáveis.</p> <br>
 				</div>
 
-				<div v-else-if="SumFacTwo > 40">
+				<div v-else-if="SumFacTwo > ipipReference.f_two.lower">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/aggradable.svg" alt="">
@@ -95,7 +95,7 @@
 			<div class="container">
 				<h1 class="title">Conscienciosidade</h1>
 				<p>Consciensiosidade é a característica associada a forma que controlamos e direcionamos nossos impulsos. Impulsos não necessariamente são ruins, às vezes reagir rapidamente e melhor que não reagir de forma satisfatória. </p> <br>
-				<div v-if="SumFacThree > 80">
+				<div v-if="SumFacThree > ipipReference.f_three.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/consciousness.svg" alt="">
@@ -107,7 +107,7 @@
 					<p>Você tende a fugir de situações de despreparo e pode atingir grande sucesso através de sua tendência de planejar suas atividades e persistir. As pessoas com alto nível de conscienciosidade são consideradas inteligentes e confiáveis. No entanto, tendem a ser perfeccionistas e workaholics. Também são consideradas chatas e entediantes por outras pessoas.</p> <br>
 				</div>
 
-				<div v-else-if="SumFacThree > 40">
+				<div v-else-if="SumFacThree > ipipReference.f_three.lower">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/consciousness.svg" alt="">
@@ -136,7 +136,7 @@
 			<div class="container">
 				<h1 class="title">Estabilidade Emocional</h1>
 				<p>Também conhecida como neuroticismo, a estabilidade emocional se refere a tendência de sentir emoções negativas tais como ansiedade, raiva, depressão.</p> <br>
-				<div v-if="SumFacFour > 80">
+				<div v-if="SumFacFour > ipipReference.f_four.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/1f631.svg" alt="">
@@ -148,7 +148,7 @@
 					<p>Pessoas com instabilidade emocional são reagem a eventos que a maioria das pessoas não reagem. A intensidade das reações costuma ser também maior. Você tende a interpretar reações normais como ameaçadoras e tem dificuldade em lidar com pequenas frustrações. Essa tendência tende a diminuir sua capacidade de pensar claramente, tomar decisões e se adaptar a reações de estresse.</p> <br>
 				</div>
 
-				<div v-else-if="SumFacFour > 40">
+				<div v-else-if="SumFacFour > ipipReference.f_four.lower">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/1f642.svg" alt="">
@@ -175,7 +175,7 @@
 
 			<!-- factor Openness -->
 			<div class="container">
-				<div v-if="SumFacFive > 80">
+				<div v-if="SumFacFive > ipipReference.f_five.upper">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/1f929.svg" alt="">
@@ -187,7 +187,7 @@
 					<p>Pessoas abertas tendem a curiosidade intelectual, apreciam arte e são sensíveis à beleza. Comparado com pessoas fechadas, elas tendem a estar mais conscientes de seus sentimentos.</p> <br>
 				</div>
 
-				<div v-else-if="SumFacFive > 40">
+				<div v-else-if="SumFacFive > ipipReference.f_five.lower">
 					<div id="emoji-block" class="is-flex is-horizontal-center">
 						<figure class="image is-128x128">
 							<img src="./../../assets/1f929.svg" alt="">
@@ -222,6 +222,7 @@
 <script>
 
 import IpipChart from './IpipChart.vue'
+import IpipReferenceData from '../../assets/sample_features.json'
 
 export default {
 	components: {
@@ -229,7 +230,8 @@ export default {
 	},
 	props: ['formName'],
 	data() {
-		return {
+    return {
+      ipipReference: IpipReferenceData,
 			formData: [],
 			datacollection : null, 
 			loaded: false,
@@ -282,9 +284,13 @@ export default {
 									this.SumFacFour, this.SumFacFive]
 					},
 					{
-						label: 'Ponto Médio',
+						label: 'Média dos respondentes',
 						backgroundColor: 'hsl(48, 100%, 67%)',
-						data: [60, 60, 60, 60, 60]
+            data: [this.ipipReference.f_one.mean,
+              this.ipipReference.f_two.mean,
+              this.ipipReference.f_three.mean,
+              this.ipipReference.f_four.mean,
+              this.ipipReference.f_five.mean]
 					}
 				]
 			}
